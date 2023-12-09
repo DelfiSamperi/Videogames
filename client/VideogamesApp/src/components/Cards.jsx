@@ -1,12 +1,12 @@
 import React from 'react';
-//import './Cards.css';
 import Card from './Card';
+import '../stylesheets/Cards.css';
 
 export default function Cards(props) {
     const { videogames } = props;
     
     return (
-        <div>
+        <div className='cardsContainer'>
             <h1>Aca van las cards de los videogames</h1>
             {
                 videogames.map(v => {
@@ -15,11 +15,8 @@ export default function Cards(props) {
                             onClose={()=> window.alert('se cierra la card')}
                             name={v.name}
                             key={v.id}
-                            platforms={v.platforms.map((p) => (p.platform))}
-                            image={v.image}
-                            releaseDate={v.releaseDate}
-                            rating={v.rating}
                             genres={v.genres.map((g) => (g.name))}
+                            image={v.image}
                         />
                     )
                 })

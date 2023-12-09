@@ -1,10 +1,10 @@
 import React from 'react';
-//import './Card.css';
+import '../stylesheets/Card.css';
 
 const Card = (props) => {
   
     return (
-        <div>
+        <div className='gameCard'>
             <button onClick={props.onClose}>X</button>
             <h3>{props.name}</h3>
             <h3>{props.releaseDate}</h3>
@@ -12,7 +12,8 @@ const Card = (props) => {
             <h3>{props.description}</h3>
             <h3>{props.rating}</h3>
             <h3>{props.gender}</h3>
-            <img src={props.image} alt={props.name} />
+            <img className='image' src={props.image} alt={props.name} />
+            
         </div>
     )
                             

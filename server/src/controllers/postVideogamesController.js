@@ -13,7 +13,7 @@ const createVideogame = async (
     
     const findVideogame = await Videogames.findAll({ where: { name: name } });
     if (findVideogame.length) {
-        throw new Error('El videojuego ingresado ya existe en la base de datos');
+        throw new Error('Ya hay un videojuego con ese nombre en la base de datos');
     };
     
     const newVideogame = await Videogames.create({

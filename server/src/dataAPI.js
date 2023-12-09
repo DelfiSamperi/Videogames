@@ -1,9 +1,6 @@
 //ESTE ARCHIVO NO SE USA EN LA APP, SOLO EN ETAPA DE PRODUCCION
 
 //endpoint de la api me da por resultado un objeto -> yo necesito el array de objetos RESULTS
-// https://api.rawg.io/api/games?key=71a83d1203bb4723b1d05b3fb6cfa5a8&dates=2019-09-01,2019-09-03&platforms=18,1,7
-
-
 const apiVideogames = {
     "count": 12,
     "next": null,
@@ -3180,7 +3177,7 @@ const apiVideogames = {
     "user_platforms": false
 };
 
-// https://api.rawg.io/api/games?key=71a83d1203bb4723b1d05b3fb6cfa5a8&dates=2019-09-20,2019-09-22&platforms=18,1,7
+//VIDEOGAMES de prueba para agregar a DataBase
 
 const DBvideogames = [
     {
@@ -3274,3 +3271,79 @@ const DBvideogames = [
         ]
     }
 ];
+
+//esto es para probar el front
+export const oneGame = {
+    "name": "Children of Morta",
+    "platforms": [
+        {
+            "platform": {
+                //"id": 4,
+                "name": "PC",
+                //"slug": "pc"
+            }
+        },
+        {
+            "platform": {
+                //"id": 1,
+                "name": "Xbox One",
+                //"slug": "xbox-one"
+            }
+        },
+        {
+            "platform": {
+                //"id": 18,
+                "name": "PlayStation 4",
+                //"slug": "playstation4"
+            }
+        },
+        {
+            "platform": {
+                //"id": 7,
+                "name": "Nintendo Switch",
+                //"slug": "nintendo-switch"
+            }
+        },
+        {
+            "platform": {
+                //"id": 5,
+                "name": "macOS",
+                //"slug": "macos"
+            }
+        },
+        {
+            "platform": {
+                //"id": 6,
+                "name": "Linux",
+                //"slug": "linux"
+            }
+        }
+    ],
+    "released": "2019-09-03",
+    "background_image": "https://media.rawg.io/media/games/434/43431e04f0cd5419a3d8e31a5c8c3d5d.jpg",
+    "rating": 3.91,
+    "genres": [
+        {
+            "id": 51,
+            "name": "Indie",
+            "slug": "indie"
+        },
+        {
+            "id": 3,
+            "name": "Adventure",
+            "slug": "adventure"
+        },
+        {
+            "id": 4,
+            "name": "Action",
+            "slug": "action"
+        },
+        {
+            "id": 5,
+            "name": "RPG",
+            "slug": "role-playing-games-rpg"
+        }
+    ]
+}
+
+export default DBvideogames;

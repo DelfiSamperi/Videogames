@@ -1,9 +1,9 @@
-//import './SearchBar.css';
+import '../stylesheets/SearchBar.css';
 import React from 'react';
 
 export default function SearchBar (props) {
     return (
-        <div>
+        <div className='searchContainer'>
             <h3>Hola soy tu searchbar!!</h3>
             <input type='search' />
             <button onClick={(id) => {props.onSearch(id)}} >Buscar </button>
