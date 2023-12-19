@@ -9,23 +9,33 @@ import Form from './Pages/Form.jsx';
 import NotFound from './Pages/NotFound.jsx';
 import Footer from './components/Footer.jsx';
 import NavBar from './components/NavBar.jsx';
-//import { getAllVideogames } from '../../../server/src/controllers/getVideogamesControllers.js';
-
-//import Cards from './components/Cards.jsx';
-// import DBvideogames, { oneGame } from '../../../server/src/dataAPI.js';
 
 
 export default function App() {
   const { pathname } = useLocation();
+  const [nameVideogame, setNameVideogame] = useState([]);
+  /*
+  const onSearch = (name) =>{
+      
+    try {
+      axios.get(`http://localhost:3000/videogames?name=${name}`)
+      .then(response => response.data)
+      .then((data)=>setNameVideogame(data));
+
+    } catch (error) {
+      console.log(error.request.response)
+    }
+    return setNameVideogame([]);
+  }; */ 
   
   return (
-    <div>
-      { /*
-        pathname !== '/' 
-        ? <NavBar onSearch={onSearch} /> && <Footer/>
-        : null */ 
-      }
-      
+    <div className='appContainer'>
+      { /* 
+        pathname !== '/'
+        ? ( <NavBar onSearch={onSearch} /> && <Footer/> )
+        : null */        
+        }
+            
       <Routes>
         <Route exact path='/' element={<LandingPage/>} />
         <Route path='/home' element={<Home />} />

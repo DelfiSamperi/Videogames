@@ -33,7 +33,6 @@ const getVideogameById = async (idVideogame, source) => {
         const videogameAPI = {
             name: dataApi.name,
             id: dataApi.id,
-            //description: dataApi.description,
             description: dataApi.description_raw,
             platforms: dataApi.platforms.map((p) => (p.platform.name)),
             image: dataApi.background_image,

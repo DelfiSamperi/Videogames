@@ -3,7 +3,7 @@ const { Videogames, Genres } = require('../db');
 const { Op } = require('sequelize');
 const myAPI = process.env.apiKey;
 
-const API_URL = `https://api.rawg.io/api/games?limit=200&key=${myAPI}`;
+const API_URL = `https://api.rawg.io/api/games?limit=100&key=${myAPI}`;
 
 // GET VIDEOGAMES FROM THE API
 const getFromApi = async () => {

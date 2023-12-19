@@ -7,7 +7,6 @@ export default function Cards(props) {
     console.log(videogames);
     return (
         <div className='cardsContainer'>
-            <h4>Aca van las cards de los videogames</h4>
             {
                 videogames?.map((game) => {
                     return (

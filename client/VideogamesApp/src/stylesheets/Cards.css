@@ -1,7 +1,8 @@
-cardsContainer{
+.cardsContainer{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-
+    background-color: aquamarine;
+    padding: 2rem;
 }

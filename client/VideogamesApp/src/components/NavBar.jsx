@@ -4,7 +4,7 @@ import SearchBar from './SearchBar';
 import '../stylesheets/NavBar.css';
 
 export default function NavBar(props) {
-    const {onSearch } = props;
+    const { onSearch } = props;
 
     return (
         <div className='navbar'>

@@ -26,7 +26,7 @@ const Detail = () => {
     return (
         <div>
             <Link to='/home'>
-                <button>Go Back</button>
+                <button>Back Home</button>
             </Link>
             <h2>{detail.name}</h2>
             <h3>Puntaje: {detail.rating}</h3>
